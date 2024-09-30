@@ -6,7 +6,18 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.container {
+  padding: 16px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +37,31 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.MuiCard-root {
+  margin-bottom: 16px;
+}
+
+/* styles.css */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 100%;
 }
 
 @keyframes App-logo-spin {
